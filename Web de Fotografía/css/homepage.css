@@ -1,0 +1,71 @@
+/*Estilos de HomePage
+*/
+
+.imagenCentral 
+{
+
+	background-color: #82c3a6;
+    display: flex;
+    justify-content: center;
+}
+
+.imagenCentral img, .imagenIzquierda img, .imagenDerecha img
+{
+	box-shadow: 2px 2px #02010a;
+	width: 100%;
+}
+
+.imagenIzquierda 
+{
+	color: black;
+	background-color: #9BC1BC;
+}
+
+.imagenIzquierda img
+{
+	transition: 1.5s;
+}
+
+.imagenIzquierda img:hover
+{
+	transform: rotate(10deg);
+}
+
+.imagenDerecha 
+{
+	color: black;
+	background-color: #36C9C6;
+}
+
+.imagenDerecha img:hover
+{
+	transform: translate(20px,-5px);
+}
+
+.imagenIzquierda, .imagenDerecha
+{
+	display: flex;
+	background-color: #d5c75f;
+	flex-direction: column;
+}
+
+.imagenIzquierda img, .imagenDerecha img
+{
+	transition: 2s;
+}
+
+.imagenIzquierda img:hover, .imagenDerecha img:hover
+{
+	box-shadow: 2px 2px #82c3a6;
+}
+
+
+.imagenIzquierda h2, .imagenDerecha h2
+{
+	text-align: center;
+}
+
+.imagenIzquierda a, .imagenDerecha a
+{
+	color: black;
+}
