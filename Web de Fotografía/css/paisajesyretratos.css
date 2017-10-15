@@ -1,0 +1,83 @@
+.paisaje
+{
+	background-color: #d5c75f;
+}
+
+
+.paisaje img
+{
+	width: 100%
+}
+
+.paisaje#paisajeBlur img
+{
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+
+.par img
+{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.paisaje#paisajeSepia img
+{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%);
+}
+/*Versión Móvil
+*/
+
+@media (min-width: 320px) 
+{
+	div.header
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header{
+		width: 100%;
+	}
+
+}
+
+/*Versión Desktop*/
+
+@media (min-width: 900px) 
+{
+	
+	.container 
+	{
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.header
+	{
+		flex-direction: row;
+	}
+
+	.header 
+	{
+		width: 100%;
+
+	}
+	
+	.paisaje
+	{
+		width: 33.33%;
+	}
+
+	.contacto, .terminos, .redes-sociales, .derechos
+	{
+		width:25%;
+	}
+
+	.contacto
+	{
+		border-bottom-left-radius: 10px;
+	}
+}

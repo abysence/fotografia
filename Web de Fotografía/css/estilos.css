@@ -63,8 +63,6 @@ body {
 	color: white;
 }
 
-
-
 /*Estilos de Footer
 */
 
@@ -82,65 +80,4 @@ body {
 .derechos
 {
 	border-bottom-right-radius: 10px;
-}
-
-
-/*Versión Móvil
-*/
-
-@media (min-width: 320px) 
-{
-	div.header
-	{
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.header, .imagenIzquierda, .imagenDerecha{
-		width: 100%;
-	}
-
-}
-
-/*Versión Desktop*/
-
-@media (min-width: 900px) 
-{
-	
-	div.header
-	{
-		flex-direction: row;
-	}
-
-	.header 
-	{
-		width: 100%;
-
-	}
-	
-	.imagenCentral 
-	{
-		width: 100%;
-	}
-
-	.imagenIzquierda, .imagenDerecha 
-	{
-		width: 50%;
-	}
-	.contacto, .terminos, .redes-sociales, .derechos
-	{
-		width:25%;
-	}
-	
-	.container 
-	{
-		width: 800px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.contacto
-	{
-		border-bottom-left-radius: 10px;
-	}
-
 }
