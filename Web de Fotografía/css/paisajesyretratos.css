@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.imagen {
+  background-color: #d5c75f; }
+
+.imagen img {
+  width: 100%; }
+
+.imagen#Blur img {
+  -webkit-filter: blur(10px);
+  filter: blur(10px); }
+
+.par img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+.imagen#Sepia img {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%); }
+
+/*Versión Móvil
+*/
+@media (min-width: 320px) {
+  div.header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+  .header {
+    width: 100%; } }
+/*Versión Desktop*/
+@media (min-width: 900px) {
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  div.header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+
+  .header {
+    width: 100%; }
+
+  .imagen {
+    width: 33.33%; }
+
+  .contacto, .terminos, .redes-sociales, .derechos {
+    width: 25%; }
+
+  .contacto {
+    border-bottom-left-radius: 10px; } }
